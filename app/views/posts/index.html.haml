@@ -1,0 +1,6 @@
+%h1 This is haml index page
+
+- @posts.each do |post|
+  %h2= link_to post.title, post
+
+= link_to 'New Inspiration or design', new_post_path
